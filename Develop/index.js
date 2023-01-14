@@ -1,10 +1,8 @@
-// TODO: Include packages needed for this application
-//what is happening, idk what this means
+// the following are the packages needed for this application
+const inquirer = require('inquirer');
+const fs = require('fs');
 
-const { default: inquirer } = require("inquirer")
-
-// TODO: Create an array of questions for user input
-//okay i can do this, EASY
+// Created an array of questions for user input
 const promptQuestions = () => {
     return inquirer.prompt([
         {
