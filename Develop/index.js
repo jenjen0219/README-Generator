@@ -1,13 +1,66 @@
 // TODO: Include packages needed for this application
+//what is happening, idk what this means
+
+const { default: inquirer } = require("inquirer")
 
 // TODO: Create an array of questions for user input
-const questions = [];
+//okay i can do this, EASY
+const promptQuestions = () => {
+    return inquirer.prompt([
+        {
+            type: 'input',
+            name: 'title',
+            message: 'Hey there silly goose! What is the title of your project?',
+        }, {
+            type: 'input',
+            name: 'description',
+            message: 'Tell me, what is your project about?',
+        }, {
+            type: 'input',
+            name: 'installation',
+            message: 'What do the people need to install in order to use your project? Give proper installation instructions.',
+        }, {
+            type: 'input',
+            name: 'contributing',
+            message: 'Explain how people can make contributions to your code!',
+        }, {
+            type: 'input',
+            name: 'tests',
+            message: 'Is there a way to test your project?',
+        }, {
+            type: 'input',
+            name: 'username',
+            message: 'What is your github username?',
+        }, {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email?',
+        }, {
+            type: 'input',
+            name: 'tests',
+            message: 'Is there a way to test your project?',
+        }, {
+            type: 'checkbox',
+            name: "license",
+            message: "Last question buckaroo, What type of license did ya want?",
+            choices: [
+                "MIT",
+                "Apache",
+                "GPL",
+                "BSD",
+                "None"
+            ]
+        }
+    ]);
+};
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+//okaaaayyyyyyyy, i can manage
+function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
-function init() {}
+//what do they meaaaaaaaan
+function init() { }
 
 // Function call to initialize app
 init();
