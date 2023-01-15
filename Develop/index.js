@@ -1,5 +1,7 @@
 // the following are the packages needed for this application
 const inquirer = require('inquirer');
+
+//this will impoirt the fs package
 const fs = require('fs');
 
 // Created an array of questions for user input
@@ -34,10 +36,6 @@ const promptQuestions = () => {
             name: 'email',
             message: 'What is your email?',
         }, {
-            type: 'input',
-            name: 'tests',
-            message: 'Is there a way to test your project?',
-        }, {
             type: 'checkbox',
             name: "license",
             message: "Last question buckaroo, What type of license did ya want?",
@@ -52,9 +50,12 @@ const promptQuestions = () => {
     ]);
 };
 
-// TODO: Create a function to write README file
-//okaaaayyyyyyyy, i can manage
-function writeToFile(fileName, data) { }
+// this function is using the writeToFile method that literally allows us the ability to create files!!! 
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+        err ? console.error(err) : console.log('Success!')
+    )
+};
 
 // TODO: Create a function to initialize app
 //what do they meaaaaaaaan
