@@ -4,6 +4,10 @@ const inquirer = require('inquirer');
 //this will impoirt the fs package
 const fs = require('fs');
 
+//this is where we make the connection from this file to the generateMarkDown
+const generateMarkdown = require("./utils/generateMarkdown");
+
+
 // Created an array of questions for user input
 const promptQuestions = () => {
     return inquirer.prompt([
@@ -57,9 +61,11 @@ function writeToFile(fileName, data) {
     )
 };
 
-// TODO: Create a function to initialize app
-//what do they meaaaaaaaan
-function init() { }
+// this function initializes the process of adding this new file, and uses the previously made function in order to do so
+function init() {
+    promptQuestions()
+        .then((data) => writeToFile("README.md", generateMarkdown.generateMarkdown(data)))
+};
 
 // Function call to initialize app
 init();
