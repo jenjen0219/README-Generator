@@ -23,6 +23,9 @@ node index.js
 You will be prompted to answer up to 7 questions and then you will be asked to select from among various license types to include in your readme. Once you have answered each question, your readme will generate within your project files on visual studio! 
 ![screenshot of dashboard](/screenshot.readme.generator.png)
 
+Here is a link to view a video breakdown of the functionality of this project! 
+[Screencastify Link](https://drive.google.com/file/d/1hxiccx90cHsFZd8oLbFkBzxZxMwoz3WF/view) 
+
   ## Contributing
   If you have any suggestions or concerns then please feel free to reach me with my information provided in the Questions section. 
   ## Tests
@@ -35,4 +38,3 @@ You will be prompted to answer up to 7 questions and then you will be asked to s
 
   My Github profile is at: [GitHub](https://github.com/jenjen0219)
   
-
