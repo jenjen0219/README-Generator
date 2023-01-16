@@ -5,7 +5,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 //this is where we make the connection from this file to the generateMarkDown
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 
 // Created an array of questions for user input
@@ -25,12 +25,16 @@ const promptQuestions = () => {
             message: 'What do the people need to install in order to use your project? Give proper installation instructions.',
         }, {
             type: 'input',
+            name: 'usage',
+            message: 'How can people use your project?',
+        }, {
+            type: 'input',
             name: 'contributing',
             message: 'Explain how people can make contributions to your code!',
         }, {
             type: 'input',
             name: 'tests',
-            message: 'Is there a way to test your project?',
+            message: 'Is there a way to test your project or something that is undergoing testing?',
         }, {
             type: 'input',
             name: 'username',
@@ -46,7 +50,6 @@ const promptQuestions = () => {
             choices: [
                 "MIT",
                 "Apache",
-                "GPL",
                 "BSD",
                 "None"
             ]
