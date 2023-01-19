@@ -1,4 +1,4 @@
-# README GENERATOR  
+ # README GENERATOR  
   
   ## Description
   The motivation for this project was to create a solution to the repetitive task of making a readme for every project. This was achieved through the implementation of node.js and various other methods that together provide the functionality of creating an entire file within visual studio. Upon further inspection one can see that this project is still incomplete in various ways, but I have faith in my abilities to catch up with course material and apply it back to the missing comppnents in this project. 
@@ -37,4 +37,3 @@ Here is a link to view a video breakdown of the functionality of this project!
   Feel free to contact me by email with any questions: [Email](mailto:jennifer.gutierrez@wsu.edu) 
 
   My Github profile is at: [GitHub](https://github.com/jenjen0219)
-  
